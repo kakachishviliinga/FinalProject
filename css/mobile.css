@@ -1,0 +1,13 @@
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .footer {
+    background-color: #2c4246;
+    color: #d9d9d9;
+    padding: 48px 153px;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-column {
+    text-align: center;
+  }
+}
