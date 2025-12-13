@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/laptop.css">
+        <link rel="stylesheet" href="./css/tablet.css">
+        <link rel="stylesheet" href="./css/mobile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+        <title>Document</title>
+    </head>
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('nav');
+
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    });
+</script>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <button class="burger">
+            <span></span>
+        </button>
+        <nav>
+            <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalogue</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <a href="/">
+            <img src="images/logo.png" alt="guitar" class />
+        </a>
+        <div class="actions">
+            <button class="btn search"><img src="images/search.svg" alt="search"></button>
+            <button class="btn user"><img src="images/user.svg" alt="user"></button>
+            <button class="btn cart"><img src="images/cart.svg" alt="cart"></button>
+        </div>
+    </header>
+    <section class="catalog">
+        <div class="catalog-header">
+            <div class="filter">
+                <span>Filter</span> <img src="images/filter.svg" alt="filter">
+            </div>
+            <div class="sort">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="best-selling">Best selling</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-catalog">
+            <div class="card-catalog">
+                <img src="images/Rectangle 1.svg" alt="Guitar 1">
+                <h4 class="card-title-catalog">Guitar Model 1</h4>
+                <div class="price-catalog">
+                    <h6>$950</h6>
+                    <button class="add-catalog"><img src="images/cart.svg"></button>
+                </div>
+            </div>
+            <div class="card-catalog">
+                <img src="images/Rectangle 2.svg" alt="Guitar 2">
+                <h4 class="card-title-catalog">Guitar Model 2</h4>
+                <div class="price-catalog">
+                    <h6>$1050</h6>
+                    <button class="add-catalog"><img src="images/cart.svg"></button>
+                </div>
+            </div>
+            <div class="card-catalog">
+                <img src="images/Rectangle 3 .svg" alt="Guitar 3">
+                <h4 class="card-title-catalog">Guitar Model 3</h4>
+                <div class="price-catalog">
+                    <h6>$990</h6>
+                    <button class="add-catalog"><img src="images/cart.svg"></button>
+                </div>
+            </div>
+            <div class="card-catalog">
+                <img src="images/Rectangle 4(2).svg" alt="Guitar 4">
+                <h4 class="card-title-catalog">Guitar Model 4</h4>
+                <div class="price-catalog">
+                    <h6>$1200</h6>
+                    <button class="add-catalog"><img src="images/cart.svg"></button>
+                </div>
+            </div>
+            <div class="card-catalog">
+                <img src="images/Rectangle 5(2).svg" alt="Guitar 5">
+                <h4 class="card-title-catalog">Guitar Model 5</h4>
+                <div class="price-catalog">
+                    <h6>$875</h6>
+                    <button class="add-catalog"><img src="images/cart.svg"></button>
+                </div>
+            </div>
+            <div class="card-catalog">
+                <img src="images/Rectangle 6 (2).svg" alt="Guitar 6">
+                <h4 class="card-title-catalog">Guitar Model 6</h4>
+                <div class="price-catalog">
+                    <h6>$1150</h6>
+                    <button class="add-catalog"><img src="images/cart.svg"></button>
+                </div>
+            </div>
+            <div class="card-catalog">
+                <img src="images/Rectangle 7(3).svg" alt="Guitar 7">
+                <h4 class="card-title-catalog">Guitar Model 7</h4>
+                <div class="price-catalog">
+                    <h6>$1020</h6>
+                    <button class="add-catalog"><img src="images/cart.svg"></button>
+                </div>
+            </div>
+            <div class="card-catalog">
+                <img src="images/Rectangle 8 (3).svg" alt="Guitar 8">
+                <h4 class="card-title-catalog">Guitar Model 8</h4>
+                <div class="price-catalog">
+                    <h6>$970</h6>
+                    <button class="add-catalog"><img src="images/cart.svg"></button>
+                </div>
+            </div>
+            <div class="card-catalog">
+                <img src="images/Rectangle 9 (3).svg" alt="Guitar 9">
+                <h4 class="card-title-catalog">Guitar Model 9</h4>
+                <div class="price-catalog">
+                    <h6>$1080</h6>
+                    <button class="add-catalog"><img src="images/cart.svg"></button>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <button class="prev">Previous</button>
+            <span>Page 1 of 5</span>
+            <button class="next">Next</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Brands</h4>
+                <ul>
+                    <li>Fender</li>
+                    <li>Gibson</li>
+                    <li>Jockson</li>
+                    <li>Ibanez</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Information</h4>
+                <ul>
+                    <li>Blog</li>
+                    <li>Delivery</li>
+                    <li>About us</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Tbilisi, str, Rustaveli 24</li>
+                    <li>+(32)2 56 78 98</li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="images/facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.whatsapp.com/?lang=en" target="_blank">
+                        <img src="images/whatsapp.svg" alt="WhatsApp"></a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="images/instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

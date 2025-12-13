@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/laptop.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <title>Document</title>
+  </head>
+</head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
+  });
+</script>
+
+
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <button class="burger">
+      <span></span>
+    </button>
+    <nav>
+      <ul class="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalogue</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+    <a href="/">
+      <img src="images/logo.png" alt="guitar" class />
+    </a>
+    <div class="actions">
+      <button class="btn search"><img src="images/search.svg" alt="search">
+      </button>
+      <button class="btn user"><img src="images/user.svg" alt="user"></button>
+      <button class="btn cart"><img src="images/cart.svg" alt="cart"></button>
+    </div>
+  </header>
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <form>
+          <div class="input-group">
+            <input type="text" placeholder="Full Name" name="name" required>
+            <input type="email" placeholder="Email" name="email" required>
+          </div>
+          <textarea placeholder="Message" name="message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-map">
+        <div class="contact-icons">
+          <img src="images/telephone.svg" alt="phone">
+          <img src="images/Email.svg" alt="email">
+          <img src="images/location.svg" alt="location">
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.597747027624!2d44.790786!3d41.715137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472f08d8de277%3A0x14a0e3e9d00a8df2!2sRustaveli%20Ave%2C%20Tbilisi%2C%20Georgia!5e0!3m2!1sen!2sge!4v1690070848824!5m2!1sen!2sge"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Brands</h4>
+        <ul>
+          <li>Fender</li>
+          <li>Gibson</li>
+          <li>Jockson</li>
+          <li>Ibanez</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Information</h4>
+        <ul>
+          <li>Blog</li>
+          <li>Delivery</li>
+          <li>About us</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li>Tbilisi, str, Rustaveli 24</li>
+          <li>+(32)2 56 78 98</li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook.svg" alt="Facebook"></a>
+          <a href="https://www.whatsapp.com/?lang=en" target="_blank">
+            <img src="images/whatsapp.svg" alt="WhatsApp"></a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="images/instagram.svg" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
